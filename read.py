@@ -6,5 +6,9 @@ with open('reviews.txt', 'r') as f:
 		count += 1 # count = count +1
 		if count % 1000 == 0: 
 			print(len(data))
-print(len(data))
-print(data[2]) 
+print('Finished loading', len(data), 'in total')
+
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
+print('留言平居長度為' sum_len/len(data))
