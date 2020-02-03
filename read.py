@@ -11,4 +11,11 @@ print('Finished loading', len(data), 'in total')
 sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
-print('留言平居長度為' sum_len/len(data))
+print('留言平均長度為', sum_len/len(data))
+
+new = []
+for  d in data:
+	if len(d) < 100:
+		new.append(d)
+print('Total', len(new), 'less than 100')
+print(new[2])
