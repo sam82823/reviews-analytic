@@ -19,3 +19,10 @@ for  d in data:
 		new.append(d)
 print('Total', len(new), 'less than 100')
 print(new[2])
+
+good = []
+for d in data:
+	if  'good' in d:
+		good.append(d)
+print('共有', len(good), '筆留言提到good')
+print(good[0])
